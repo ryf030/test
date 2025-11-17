@@ -1,4 +1,6 @@
 const { Sequelize } = require('sequelize');
+// 显式导入mysql2包，确保Sequelize能够正确加载
+const mysql2 = require('mysql2');
 
 // 创建Sequelize实例
 const sequelize = new Sequelize('message_board', 'root', 'yffs1314', {
